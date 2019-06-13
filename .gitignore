@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+env
+startbootstrap-freelancer
+static
+activate
+training/vin_master_clean
+training/vin_master_origin
+training/training.zip
