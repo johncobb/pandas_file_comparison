@@ -71,3 +71,4 @@ deactivate
 
 ## References
  - [Installing Virtual Environment](https://virtualenv.pypa.io/en/stable/installation/)
+ - [Python Data Analysis Library](https://pandas.pydata.org/)
