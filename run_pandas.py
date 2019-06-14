@@ -9,6 +9,17 @@ from util import ValidateVIN
 def footer():
      print("")
 
+def pandas_sorting(file1, file2):
+
+    # load csv file1
+    frame_one = pandas.read_csv(file1, sep='\t', names=['vin', 'make'])
+    print("csv file1 head: ", file1)
+    print(frame_one.head())
+    footer()
+    
+    # sort ascending first by make then by vin
+    frame_one.sort_values(by=['make', 'vin'], ascending=True)
+
 def pandas_examples(file1, file2):
 
     # load csv file1
@@ -107,6 +118,8 @@ if __name__ == "__main__":
     print("Welcome to the pandas exception file example")
 
     pandas_examples(sys.argv[1], sys.argv[2])
+
+    pandas_sorting(sys.argv[1], sys.argv[2])
 
 
     
