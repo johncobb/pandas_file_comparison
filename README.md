@@ -10,7 +10,11 @@
 
 ## Overview
 
-When comparing large files we typically look to relational SQL databases like MySQL, PostgreSQL, MSSQL, etc. These are great tools but the query language can become complex and difficult to read. What's more is these databases are typically guarded behind layers of database administration which can make gaining access challenging. Running large queries on a SQL database can cause performance problems in production environments. For these reasons, many DBA(s) will not allow open read access to the database. Today we have Pandas which allows users to design queries in a more analytical and natural language perspective wihtout having a negative impact on IT infrastructure.
+When comparing large files, the normal assumption is using relational SQL databases. The popular programs we think ofm ones that reach outside comptuer science knowledge, are MySQL, PostgreSQL, MSSQL, etc. Although such databases harbor multiple advantages, problems derive from the structured query language, resulting in complex and disconcerting data. 
+
+Another disadvantage regarding the relational databases is the layer of security. In typical scenarios, databases are guarded behind layers of administration. This causes the double problem of not only acquiring the data becoming a hurdle more than a task, but leaves frustration behind the user. 
+
+Running large queries on a SQL database also enhances performance problems for production environments, furhtring accumulating frustration. Taken from experience the security layers and perfromance hinderances, numerous database administrators DBA(s) refuse open-read access to the database. In response, we now have Pandas which allows users to construct queries focusing on analytical and natural language perspective wihtout negative resistance on IT infrastructure.
 
 
 
@@ -73,3 +77,4 @@ deactivate
  - [Installing Virtual Environment](https://virtualenv.pypa.io/en/stable/installation/)
  - [Python Data Analysis Library](https://pandas.pydata.org/)
  - [Storage of Pandas DataFrames](http://matthewrocklin.com/blog/work/2015/03/16/Fast-Serialization)
+ - [Indexing and Selecting Data with Pandas](https://www.geeksforgeeks.org/indexing-and-selecting-data-with-pandas/)
