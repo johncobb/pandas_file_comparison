@@ -9,6 +9,18 @@ from util import ValidateVIN
 def footer():
      print("")
 
+def pandas_serialzing(file1, file2):
+    # load csv file1
+    frame_one = pandas.read_csv(file1, sep='\t', names=['vin', 'make'])
+    print("csv file1 head: ", file1)
+    print(frame_one.head())
+
+    # serialize the repeated categorical data field make
+    # this allows us to serialize and re-hydrate the field faster
+    frame_one['make'] = frame_one['make'].astype('category')
+    frame_one.vin
+    footer()
+
 def pandas_sorting(file1, file2):
 
     # load csv file1

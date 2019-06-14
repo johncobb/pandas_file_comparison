@@ -72,3 +72,4 @@ deactivate
 ## References
  - [Installing Virtual Environment](https://virtualenv.pypa.io/en/stable/installation/)
  - [Python Data Analysis Library](https://pandas.pydata.org/)
+ - [Storage of Pandas DataFrames](http://matthewrocklin.com/blog/work/2015/03/16/Fast-Serialization)
